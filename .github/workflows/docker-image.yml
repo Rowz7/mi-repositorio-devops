@@ -26,7 +26,7 @@ jobs:
       - name: Test the app
         run: |
           sleep 10
-          curl -s http://localhost:5801
+          curl -s http://localhost:5001
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
