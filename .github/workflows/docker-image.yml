@@ -21,7 +21,7 @@ jobs:
         run: docker build -t flask-docker-app ./app
 
       - name: Run Docker Compose
-        run: docker compose -t docker-compose.yml up -d
+        run: docker compose -f docker-compose.yml up -d
 
       - name: Test the app
         run: |
