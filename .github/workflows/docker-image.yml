@@ -31,8 +31,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER }}
+          username: ${{ secrets.DOCKER_USER_NAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -63,7 +63,7 @@ jobs:
           sudo apt install -y python3 python3-pip python3-venv git
           cd Desktop/mi-repositorio-devops
           rm -rf DevOps-act3
-          git clone https://github.com/Rowz7/mi-repositorio-devops/actions/runs/14678269191 
+          git clone https://github.com/Rowz7/mi-repositorio-devops/actions/runs/14678269191
           cd DevOps-act3
           python3 -m venv venv
           source venv/bin/activate
