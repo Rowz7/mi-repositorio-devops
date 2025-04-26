@@ -64,7 +64,7 @@ jobs:
           cd Desktop/mi-repositorio-devops
           rm -rf DevOps-act3
           git clone https://github.com/Rowz7/mi-repositorio-devops/actions/runs/14678269191
-          cd DevOps-act3
+          cd mi-repositorio-devops
           python3 -m venv venv
           source venv/bin/activate
           pip install --upgrade pip
