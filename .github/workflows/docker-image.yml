@@ -41,7 +41,7 @@ jobs:
           file: ./app/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: jairmsnz/flask-devops-app:latest
+          tags: jairmsnz/flask-devops-app:latest #########################
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
@@ -61,9 +61,9 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${IP_ADDRESS} << 'EOF'
           sudo apt update
           sudo apt install -y python3 python3-pip python3-venv git
-          cd /home/ubuntu
+          cd /home/ubuntu ##### direccion a mi repo
           rm -rf DevOps-act3
-          git clone https://github.com/jair-msmz/DevOps-act3.git
+          git clone https://github.com/jair-msmz/DevOps-act3.git #############
           cd DevOps-act3
           python3 -m venv venv
           source venv/bin/activate
