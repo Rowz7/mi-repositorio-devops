@@ -25,7 +25,7 @@ jobs:
 
       - name: Test the app
         run: |
-          sleep 10
+          sleep 15
           curl -s http://localhost:5001
 
       - name: Log in to Docker Hub
