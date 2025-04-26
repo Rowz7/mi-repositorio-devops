@@ -41,7 +41,7 @@ jobs:
           file: ./app/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: rowz7/flask-devops-app:latest
+          tags: rowz7/flask-docker-app:latest
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
